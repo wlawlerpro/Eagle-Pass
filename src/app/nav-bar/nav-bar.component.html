@@ -1,6 +1,14 @@
+
+
 <nav class="navbar">
 	<div class="container">
-	  <ul class="nav-list">
+	  <div class="navbar-header">
+	    <button class="navbar-toggler" (click)="toggleMenu()">
+	      <i class="fa fa-bars"></i>
+	    </button>
+	    <a routerLink="/">Eagle Pass</a>
+	  </div>
+	  <ul class="nav-list" [ngClass]="{ 'show-menu': isMenuOpen }">
 	    <li class="nav-item"><a routerLink="/">Home</a></li>
 	    <li class="nav-item"><a routerLink="/ski-resorts">Ski Resorts</a></li>
 	    <li class="nav-item"><a routerLink="/lift-tickets">Lift Tickets</a></li>
