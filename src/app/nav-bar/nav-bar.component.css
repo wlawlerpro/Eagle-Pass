@@ -2,7 +2,7 @@
 	background-color: #fc9403;
 	color: #fff;
 	padding: 10px 0;
-	display:none;
+	
       }
       
       .container {
@@ -28,6 +28,7 @@
 	position: absolute; 
 	top: 10px;
 	right: 10px;
+	display:none;
       }
       
       .nav-list {
@@ -69,12 +70,9 @@
       }
       
       @media (min-width: 768px) {
-	.navbar-toggler {
-	  display: none; /* Hide the hamburger menu on larger screens */
-	}
-       .navbar{
-	display:block;
-       }
+	
+       
+     
 	.nav-list {
 	  flex-direction: row;
 	  position: relative;
@@ -85,7 +83,12 @@
 	}
 }
 	@media(max-width:767px) {
-         
+		.navbar-toggler {
+			display:block; /* Hide the hamburger menu on larger screens */
+		      } 
+	       .nav-list{
+		display: none;
+	       }
 	  
 	}
       
