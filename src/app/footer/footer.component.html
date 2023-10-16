@@ -1,12 +1,12 @@
 <footer class="footer">
-	<div class="newsletter-section">
-	  <div class="newsletter-input">
-	    <input type="email" placeholder="Subscribe to our newsletter">
-	    <button class="subscribe-button" (click)="subscribeToNewsletter()">Subscribe</button>
+	<div class="footer-content">
+	  <div class="newsletter-column">
+	    <div class="newsletter-input">
+	      <input type="email" placeholder="Subscribe to our newsletter">
+	      <button class="subscribe-button" (click)="subscribeToNewsletter()">Subscribe</button>
+	    </div>
 	  </div>
-	</div>
-	<div class="footer-links">
-	  <div class="footer-column">
+	  <div class="explore-column">
 	    <h3>Explore</h3>
 	    <ul>
 	      <li><a routerLink="/ski-resorts">Ski Resorts</a></li>
@@ -14,15 +14,13 @@
 	      <!-- Add more links as needed -->
 	    </ul>
 	  </div>
-	  <div class="footer-column">
-	    <h3>Connect</h3>
-	    <ul>
-	      <li><a routerLink="/facebook"><img src="facebook-logo.png" alt="Facebook"></a></li>
-	      <li><a routerLink="/youtube"><img src="youtube-logo.png" alt="YouTube"></a></li>
-	      <li><a routerLink="/twitter"><img src="twitter-logo.png" alt="Twitter"></a></li>
-	      <li><a routerLink="/instagram"><img src="instagram-logo.png" alt="Instagram"></a></li>
-	    </ul>
-	  </div>
+	</div>
+	<div class="social-media-links">
+	  <a routerLink="/facebook"><img src="facebook-logo.png" alt="Facebook"></a>
+	  <a routerLink="/youtube"><img src="youtube-logo.png" alt="YouTube"></a>
+	  <a routerLink="/twitter"><img src="twitter-logo.png" alt="Twitter"></a>
+	  <a routerLink="/instagram"><img src="instagram-logo.png" alt="Instagram"></a>
 	</div>
       </footer>
+      
       

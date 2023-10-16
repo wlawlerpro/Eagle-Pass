@@ -4,16 +4,27 @@
 	padding: 20px;
       }
       
-      .newsletter-section {
+      .footer-content {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+      }
+      
+      .newsletter-column,
+      .explore-column {
+	flex: 1;
+	margin-right: 20px;
+      }
+      
+      .newsletter-column {
+	margin-right: 0; /* Remove margin on the last column */
       }
       
       .newsletter-input {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	margin-top: 40px;
       }
       
       .newsletter-input input {
@@ -33,36 +44,37 @@
 	cursor: pointer;
       }
       
-      .footer-links {
+      .explore-column {
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-direction: column; /* Change to column layout */
+	align-items: center; /* Center-align the content */
       }
       
-      .footer-column {
-	flex: 1;
-	margin-right: 20px;
-      }
-      
-      .footer-column:last-child {
-	margin-right: 0;
-      }
-      
-      .footer h3 {
+      .explore-column h3 {
 	font-size: 1.2rem;
+	margin-bottom: 10px; /* Add space between title and links */
       }
       
-      .footer ul {
+      .explore-column ul {
 	list-style: none;
 	padding: 0;
       }
       
-      .footer li {
+      .explore-column li {
 	margin: 5px 0;
       }
       
-      .footer a {
+      .explore-column a {
 	text-decoration: none;
 	color: #fff;
+      }
+      
+      .social-media-links {
+	text-align: center; /* Center the social media links */
+      }
+      
+      .social-media-links a {
+	margin: 0 10px;
+	display: inline-block;
       }
       
