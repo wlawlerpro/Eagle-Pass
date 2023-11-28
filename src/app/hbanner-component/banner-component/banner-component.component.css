@@ -23,6 +23,11 @@
 	text-align: center;
 	color: #fff;
       }
+
+      .btn-primary{
+	background-color: #FC9403 !important;
+	border-color: #FC9403 !important;
+      }
       
       .banner-content h1 {
 	font-size: 2.5rem;
